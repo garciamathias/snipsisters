@@ -1,12 +1,13 @@
 <!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snip Sisters Hair Salon - Cairns</title>
+    <title>Snip Sisters - Salon de Coiffure à Cairns</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <nav>
@@ -14,194 +15,80 @@
             <img src="logo.png" alt="Snip Sisters Logo">
         </div>
         <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#hours">Hours</a>
-            <a href="#contact">Contact</a>
+            <a href="#home">Accueil</a>
+            <a href="#booking">Réserver</a>
+            <a href="#hours">Horaires</a>
+            <button class="call-button">Nous appeler</button>
+        </div>
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </nav>
 
-    <header id="home">
-        <h1>Welcome to Snip Sisters</h1>
-        <p>Your premium hair salon in Cairns, Australia</p>
-        <button class="btn-primary">Book Now</button>
-    </header>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-category">
-                <h3>Haircut & Blowdry</h3>
-                <div class="service-item">
-                    <span>Short</span>
-                    <span>$90</span>
-                </div>
-                <div class="service-item">
-                    <span>Mid</span>
-                    <span>$115</span>
-                </div>
-                <div class="service-item">
-                    <span>Long</span>
-                    <span>$130</span>
-                </div>
-                <div class="service-item">
-                    <span>Extra Long</span>
-                    <span>$150</span>
-                </div>
-                <div class="service-item">
-                    <span>Restyle</span>
-                    <span>$150</span>
-                </div>
-            </div>
-
-            <div class="service-category">
-                <h3>Blowdry Only</h3>
-                <div class="service-item">
-                    <span>Short</span>
-                    <span>$55</span>
-                </div>
-                <div class="service-item">
-                    <span>Mid</span>
-                    <span>$80</span>
-                </div>
-                <div class="service-item">
-                    <span>Long</span>
-                    <span>$95</span>
-                </div>
-                <div class="service-item">
-                    <span>Extra Long</span>
-                    <span>$110</span>
-                </div>
-                <div class="service-item">
-                    <span>Extensions</span>
-                    <span>$150</span>
-                </div>
-                <div class="service-item">
-                    <span>Iron</span>
-                    <span>$15</span>
-                </div>
-            </div>
-
-            <div class="service-category">
-                <h3>Highlights/Balayage</h3>
-                <div class="service-item">
-                    <span>Part Line</span>
-                    <span>$110</span>
-                </div>
-                <div class="service-item">
-                    <span>3/4 Head</span>
-                    <span>$145</span>
-                </div>
-                <div class="service-item">
-                    <span>Half Head</span>
-                    <span>$160</span>
-                </div>
-                <div class="service-item">
-                    <span>Full Head</span>
-                    <span>$190</span>
-                </div>
-            </div>
-
-            <div class="service-category">
-                <h3>Color</h3>
-                <div class="service-item">
-                    <span>Roots</span>
-                    <span>$120</span>
-                </div>
-                <div class="service-item">
-                    <span>Full Length</span>
-                    <span>$160-185</span>
-                </div>
-            </div>
-
-            <div class="service-category">
-                <h3>Toner</h3>
-                <div class="service-item">
-                    <span>Short</span>
-                    <span>$45</span>
-                </div>
-                <div class="service-item">
-                    <span>Mid</span>
-                    <span>$60</span>
-                </div>
-                <div class="service-item">
-                    <span>Long</span>
-                    <span>$75</span>
-                </div>
-                <div class="service-item">
-                    <span>Extra Long</span>
-                    <span>$85</span>
-                </div>
-            </div>
-
-            <div class="service-category">
-                <h3>Treatment</h3>
-                <div class="service-item">
-                    <span>Short</span>
-                    <span>$40</span>
-                </div>
-                <div class="service-item">
-                    <span>Mid</span>
-                    <span>$55</span>
-                </div>
-                <div class="service-item">
-                    <span>Long</span>
-                    <span>$65</span>
-                </div>
-            </div>
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Bienvenue chez Snip Sisters</h1>
+            <p>Votre salon de coiffure premium à Cairns, Australie</p>
+            <button class="btn-primary">Réserver maintenant</button>
         </div>
+        <div class="hero-decoration"></div>
+    </section>
 
-        <div class="package-example">
-            <h3>Popular Package Example</h3>
-            <p>Full head highlights + Long toner + Long haircut + Treatment = $460</p>
-            <span class="duration">(4-hour service)</span>
+    <section id="booking" data-aos="fade-up">
+        <h2>Réserver votre rendez-vous</h2>
+        <div class="booking-container">
+            <div id="square-booking">
+                <iframe 
+                    src="https://my-business-102766-101324.square.site/" 
+                    width="100%" 
+                    height="800px" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </section>
 
-    <section id="hours">
-        <h2>Opening Hours</h2>
+    <section id="hours" data-aos="fade-up">
+        <h2>Nos horaires d'ouverture</h2>
         <div class="hours-grid">
-            <div class="hour">
-                <span>Monday</span>
-                <span>Closed</span>
+            <div class="hour" data-aos="fade-right" data-aos-delay="100">
+                <span>Lundi</span><span>Fermé</span>
             </div>
-            <div class="hour">
-                <span>Tuesday</span>
-                <span>9am - 7pm</span>
+            <div class="hour" data-aos="fade-right" data-aos-delay="200">
+                <span>Mardi</span><span>9h - 19h</span>
             </div>
-            <div class="hour">
-                <span>Wednesday</span>
-                <span>9am - 7pm</span>
+            <div class="hour" data-aos="fade-right" data-aos-delay="300">
+                <span>Mercredi</span><span>9h - 19h</span>
             </div>
-            <div class="hour">
-                <span>Thursday</span>
-                <span>10am - 8pm</span>
+            <div class="hour" data-aos="fade-right" data-aos-delay="400">
+                <span>Jeudi</span><span>10h - 20h</span>
             </div>
-            <div class="hour">
-                <span>Friday</span>
-                <span>9am - 7pm</span>
+            <div class="hour" data-aos="fade-right" data-aos-delay="500">
+                <span>Vendredi</span><span>9h - 19h</span>
             </div>
-            <div class="hour">
-                <span>Saturday</span>
-                <span>10am - 5pm</span>
+            <div class="hour" data-aos="fade-right" data-aos-delay="600">
+                <span>Samedi</span><span>10h - 17h</span>
             </div>
-            <div class="hour">
-                <span>Sunday</span>
-                <span>Closed</span>
+            <div class="hour" data-aos="fade-right" data-aos-delay="700">
+                <span>Dimanche</span><span>Fermé</span>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <div class="footer-content">
-            <h3>Visit Us</h3>
+    <footer>
+        <div class="footer-content" data-aos="fade-up">
+            <h3>Visitez-nous</h3>
             <p>Snip Sisters Hair Salon</p>
             <p>Cairns, Australia</p>
             <p>Est. 2024</p>
-            <button class="btn-secondary">Book Appointment</button>
+            <button class="btn-secondary">Réserver un rendez-vous</button>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
