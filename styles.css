@@ -432,3 +432,54 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* Ajouter dans la section des heures du CSS */
+.hour {
+    /* Garder les styles existants */
+    transition: all 0.3s ease;
+}
+
+.hour.current-day {
+    background: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(122, 158, 126, 0.2);
+}
+
+/* Styles additionnels pour les heures */
+.hour {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.hour .day {
+    font-weight: 600;
+}
+
+.hour .time {
+    color: var(--secondary-color);
+}
+
+.hour.current-day .time {
+    color: white;
+}
+
+/* Animation d'entrée pour le jour courant */
+@keyframes highlightIn {
+    from {
+        background-position: -100% 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+.hour.current-day {
+    animation: highlightIn 0.5s ease forwards;
+}
