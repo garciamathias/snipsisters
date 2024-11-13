@@ -71,3 +71,28 @@ document.addEventListener('DOMContentLoaded', function() {
         burgerMenu.classList.toggle('active');
     });
 });
+
+// Ajouter dans le script.js, à l'intérieur du DOMContentLoaded
+function highlightCurrentDay() {
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const currentDay = days[new Date().getDay()];
+    
+    const hourElements = document.querySelectorAll('.hour');
+    hourElements.forEach(hourElement => {
+        const dayText = hourElement.textContent;
+        if (dayText.includes(currentDay)) {
+            hourElement.classList.add('current-day');
+            
+            // Animation subtile de pulsation
+            setInterval(() => {
+                hourElement.style.transform = 'scale(1.02)';
+                setTimeout(() => {
+                    hourElement.style.transform = 'scale(1)';
+                }, 1000);
+            }, 2000);
+        }
+    });
+}
+
+// Appeler la fonction
+highlightCurrentDay();
