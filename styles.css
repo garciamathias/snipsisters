@@ -196,3 +196,30 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Ajoutez ces styles pour la section booking */
+#booking {
+    padding: 5rem 2rem;
+    background: var(--background-color);
+}
+
+#square-booking {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+#square-booking iframe {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #square-booking {
+        padding: 1rem 0;
+    }
+    
+    #square-booking iframe {
+        height: 600px;
+    }
+}
